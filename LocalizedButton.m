@@ -67,6 +67,9 @@
 - (void)setup
 {
     [self setTitle:NSLocalizedString(self.titleLabel.text, self.text) forState:UIControlStateNormal];
+    [self setTitle:NSLocalizedString(self.titleLabel.text, self.text) forState:UIControlStateSelected];
+    [self setTitle:NSLocalizedString(self.titleLabel.text, self.text) forState:UIControlStateDisabled];
+    [self setTitle:NSLocalizedString(self.titleLabel.text, self.text) forState:UIControlStateHighlighted];
     
     
     // BG Image

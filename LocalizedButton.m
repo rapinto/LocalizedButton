@@ -58,6 +58,12 @@
 }
 
 
+- (void)dealloc
+{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    [super dealloc];
+}
+
 
 #pragma mark -
 #pragma mark View Update Methods
